@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 
-const endpoint = 'assets/json/videos.json' // http://www.yourdomain.com/api/videos/
+const endpoint = '/static/ang/assets/json/videos.json' // http://www.yourdomain.com/api/videos/
 
 @Injectable()
 export class VideoService {
