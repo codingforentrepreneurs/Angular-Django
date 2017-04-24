@@ -1,6 +1,6 @@
 
-<div *ngIf='!video && !error'>Loading</div>
-<div *ngIf='error'>Error. Please try again.</div>
+<div *ngIf='!video && !errorStr'>Loading</div>
+<div *ngIf='errorStr' class='text-center'><h1>{{ errorStr }}</h1></div>
 <div *ngIf='video'>
     <h1>{{ video.name }}</h1>
     <hr/>

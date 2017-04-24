@@ -14,7 +14,7 @@ export class VideoDetailComponent implements OnInit, OnDestroy {
     private req:any;
     video: VideoItem;
     slug:string;
-    error: Boolean;
+    errorStr: Boolean;
   constructor(private route: ActivatedRoute, private router: Router, private _video:VideoService) { }
 
   ngOnInit() {
@@ -22,11 +22,7 @@ export class VideoDetailComponent implements OnInit, OnDestroy {
           this.slug = params['slug']
           this.req = this._video.get(this.slug).subscribe(data=>{
             this.video = data as VideoItem
-          }, error=>{
-            console.log(error)
-            this.error = true;
-            //this.router.navigate(['/videos'])
-          })
+          }, error=>this.errorStr = error)
       })
   }
   ngOnDestroy(){
