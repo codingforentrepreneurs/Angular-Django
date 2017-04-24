@@ -1,6 +1,11 @@
 ![Angular + Django Logo](https://cfe2-static.s3-us-west-2.amazonaws.com/media/projects/angular-django/images/share/angulardjango_share.png)
-# Angular-Django
+# Angular + Django
 Integrate Try Angular v4 to a Django backend using the Django Rest Framework and Django version 1.11.
+
+[Watch](https://www.codingforentrepreneurs.com/projects/angular-django/) the step-by-step tutorial. 
+
+Suggested projects:
+- Watch [Try Angular v4](https://www.codingforentrepreneurs.com/projects/try-angular-v4/)
 
 
 # Video Code
