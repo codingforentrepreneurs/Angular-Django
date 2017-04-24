@@ -16,15 +16,12 @@ export class SearchComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-      // console.log(this.passedQuery)
       if (this.passedQuery){
           this.searchQuery = this.passedQuery
       }
   }
 
   submitSearch(event, formData){
-      console.log(event)
-      console.log(formData.value)
       let searchedQuery = formData.value['q']
       if (searchedQuery){
          this.router.navigate(['/search', {q: searchedQuery}])

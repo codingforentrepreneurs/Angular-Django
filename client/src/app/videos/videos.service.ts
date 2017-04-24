@@ -38,7 +38,12 @@ export class VideoService {
   }
 
   private handleError(error:any, caught:any): any{
-      console.log(error, caught)
+      // console.log(error, caught)
+      if (error.status == 404){
+          alert("Oopps. Not found")
+      } else {
+        alert("Something went wrong. Please try again.")
+      }
   }
 
 }

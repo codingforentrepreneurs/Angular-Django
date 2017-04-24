@@ -1,5 +1,6 @@
 
-<div *ngIf='!video'>Loading</div>
+<div *ngIf='!video && !error'>Loading</div>
+<div *ngIf='error'>Error. Please try again.</div>
 <div *ngIf='video'>
     <h1>{{ video.name }}</h1>
     <hr/>

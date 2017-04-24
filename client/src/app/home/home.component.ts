@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
       this.req = this._video.featured().subscribe(data=>{
-          //console.log(data.json())
           //this.homeImageList 
           this.homeImageList = data as [VideoItem]
           // data.filter(item=>{

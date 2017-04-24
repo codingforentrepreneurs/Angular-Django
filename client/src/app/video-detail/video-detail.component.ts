@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { VideoItem } from '../videos/video';
 import { VideoService } from '../videos/videos.service';
 
@@ -14,13 +14,18 @@ export class VideoDetailComponent implements OnInit, OnDestroy {
     private req:any;
     video: VideoItem;
     slug:string;
-  constructor(private route: ActivatedRoute, private _video:VideoService) { }
+    error: Boolean;
+  constructor(private route: ActivatedRoute, private router: Router, private _video:VideoService) { }
 
   ngOnInit() {
       this.routeSub = this.route.params.subscribe(params => {
           this.slug = params['slug']
           this.req = this._video.get(this.slug).subscribe(data=>{
             this.video = data as VideoItem
+          }, error=>{
+            console.log(error)
+            this.error = true;
+            //this.router.navigate(['/videos'])
           })
       })
   }
