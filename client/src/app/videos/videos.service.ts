@@ -18,19 +18,23 @@ export class VideoService {
               .catch(this.handleError)
   }
   get(slug){
-      return this.http.get(endpoint)
-              .map(response=>{
-                     let data = response.json().filter(item=>{
-                                      if (item.slug == slug) {
-                                          return item
-                                      }
-                                  })
-                     if (data.length == 1){
-                         return data[0]
-                     }
-                     return {}
-               })
+    return this.http.get(endpoint + slug + "/")
+              .map(response=>response.json())
               .catch(this.handleError)
+
+      // return this.http.get(endpoint)
+      //         .map(response=>{
+      //                let data = response.json().filter(item=>{
+      //                                 if (item.slug == slug) {
+      //                                     return item
+      //                                 }
+      //                             })
+      //                if (data.length == 1){
+      //                    return data[0]
+      //                }
+      //                return {}
+      //          })
+      //         .catch(this.handleError)
   }
 
   search(query){
