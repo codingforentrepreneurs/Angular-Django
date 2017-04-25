@@ -40,3 +40,7 @@ Suggested projects:
 [17 - Catch All 404 & 500 Server Page](../../tree/f5a7012a59d48da443caeb0555b3806d8e5de0b0)
 
 [18 - Go Live with Heroku + Django + Angular](../../tree/9243cbe79cd4aad4092fa1bfe3e3f08c5a703bf7)
+
+[19 - Backend Image Path](../../tree/514a8186f343776a43acbe4f538a473bad47e715)
+
+[20 - Custom Domain Name](../../tree/850cb0d8eedecdfb8ddcc2d2928028c1707fa52a)
