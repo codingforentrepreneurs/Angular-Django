@@ -9,7 +9,9 @@ class VideoSerializer(serializers.ModelSerializer):
         fields = ['name', 'slug', 'embed', 'featured', 'image']
 
     def get_image(self, obj):
-        return "/static/ang/assets/images/nature/4.jpg"
+        if obj.image_path:
+            return str(obj.image_path)
+        return "/static/ang/assets/images/nature/1.jpg"
 
 
 class VideoDetailSerializer(serializers.ModelSerializer):
@@ -28,7 +30,9 @@ class VideoDetailSerializer(serializers.ModelSerializer):
         ]
 
     def get_image(self, obj):
-        return "/static/ang/assets/images/nature/4.jpg"
+        if obj.image_path:
+            return str(obj.image_path)
+        return "/static/ang/assets/images/nature/1.jpg"
 
     def get_is_promo(self, obj):
         return False
