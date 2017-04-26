@@ -17,7 +17,7 @@ import { VideoService } from '../videos/videos.service';
 export class HomeComponent implements OnInit, OnDestroy {
     private req: any;
    homeImageList:[VideoItem] = [] as [VideoItem]
-   videoListDefaultImage = '/static/ang/assets/images/videos/1.jpg'
+   videoListDefaultImage = 'https://angulardjango.s3-us-west-2.amazonaws.com/static/ang/assets/images/videos/1.jpg'
   constructor(private http:Http, private router:Router, private _video:VideoService) { }
 
   ngOnInit() {
