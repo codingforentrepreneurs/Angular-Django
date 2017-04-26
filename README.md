@@ -44,3 +44,9 @@ Suggested projects:
 [19 - Backend Image Path](../../tree/514a8186f343776a43acbe4f538a473bad47e715)
 
 [20 - Custom Domain Name](../../tree/850cb0d8eedecdfb8ddcc2d2928028c1707fa52a)
+
+[21 - AWS S3 For Static Files in Django](../../tree/499f0a179219627aa923576028787327dea14aab)
+
+[22 - Fix Broken Images](../../tree/aae3c660177e25b8204974862e9b2b8b839f583a)
+
+[23 - Image Field & Uploading Images](../../tree/9b8ae4824ca15d2661cb5f8cd6dabcd0c91d6049)
