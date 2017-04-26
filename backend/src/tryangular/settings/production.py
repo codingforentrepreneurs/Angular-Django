@@ -152,4 +152,4 @@ STATICFILES_DIRS = [
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 from tryangular.aws.conf import *
-
+ 
