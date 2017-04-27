@@ -50,3 +50,7 @@ Suggested projects:
 [22 - Fix Broken Images](../../tree/aae3c660177e25b8204974862e9b2b8b839f583a)
 
 [23 - Image Field & Uploading Images](../../tree/9b8ae4824ca15d2661cb5f8cd6dabcd0c91d6049)
+
+[24 - Env Config Variables](../../tree/83372d9242d1456cdab9c56ac468553bda57413e)
+
+[25 - Secure your Site with Free SSL / TLS](../../tree/4a644e53a72a592c53ad6ce8f3259012865f6399)
