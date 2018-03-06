@@ -6,7 +6,7 @@
     "node": "5.9.1"
   },
   "dependencies": {
-    "ejs": "2.4.1",
+    "ejs": "2.5.5",
     "express": "4.13.3",
     "path": "0.12.7",
     "mongoose": "4.9.3",
